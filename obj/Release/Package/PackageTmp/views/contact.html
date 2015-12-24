@@ -1,0 +1,76 @@
+﻿<div ng-controller="contactController" class="text-center">
+    <div class="row header-space">
+        <h2>{{message}}</h2>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div id="contact-form">
+            <div class="container contact">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <form ng-controller="validationCtrl" name="sampleForm" novalidate>
+                            <div class="form-group row">
+                                <div class="col-sm-3 col-xs-12">
+                                    <label for="firstName">Förnamn</label>
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <input type="text" name="firstName" class="form-control" placeholder="Förnamn" ng-model="firstName" required />
+                                    <span style="color:red" ng-show="sampleForm.lastName.$dirty">
+                                        <span ng-show="sampleForm.firstName.$error.required">Du behöver ange ditt förnamn</span>
+                                    </span>
+                            </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3 col-xs-12">
+                                    <label for="lastName">Efternamn</label>
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <input type="text" name="lastName" class="form-control" placeholder="Efternamn" ng-model="lastName" required />
+                                    <span style="color:red" ng-show="sampleForm.lastName.$dirty">
+                                        <span ng-show="sampleForm.lastName.$error.required">Du behöver ange ditt efternamn</span>
+                                    </span>
+                            </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3 col-xs-12">
+                                    <label for="forName">Epost</label>
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <input type="text" name="email" class="form-control" placeholder="E-post" ng-model="email" required />
+                                    <span style="color:red" ng-show="sampleForm.email.$dirty">
+                                    <span ng-show="sampleForm.email.$error.required">Du måste ange en giltig e-mail adress.</span>
+                                    </span>
+</div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-3 col-xs-12">
+                                    <label for="forName">Meddelande:</label>
+                                </div>
+                                <div class="col-sm-9 col-xs-12">
+                                    <textarea rows="4" cols="50" class="form-control" name="message" placeholder="Meddelande"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-xs-2">&nbsp;</div>
+                            <div class="col-sm-6 col-xs-10">
+                                <p><button class="text-uppercase btn btn-primary pull-left" ng-click="reset()">Återställ</button></p>
+                            </div>
+                            <div class="col-sm-3 col-xs-10">
+                                <p><button type="submit" class="text-uppercase btn btn-primary pull-right" ng-disabled="sampleForm.$invalid" ng-click="checkData()">Skicka</button></p>
+                            </div>
+                        </form>
+                    
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12">
+                        <p class="text-right"><b>xperia</b></p>
+                        <p class="text-right">Tullhus 3, Skeppsbron</p>
+                        <p class="text-right contact-adress">111 30 Stockholm</p>
+                        <p class="text-right contact-adress">Telefon 08-555 12 34</p>
+                        <p class="text-right">E-post info@xperia.se</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+   
+    </div>
+

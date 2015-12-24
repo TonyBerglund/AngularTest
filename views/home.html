@@ -1,0 +1,17 @@
+﻿<div ng-controller="mainController" class="container" id="banners-collection-wrap">
+    <div class="row">
+        <div class="columns">
+            <div ng-repeat="image in images" class="col-sm-6 col-md-6 small-banner">
+                <h6 class="image-title text-uppercase">{{image.title}}</h6>
+                <img ng-src="{{image.url}}" class="images-start img-responsive" />
+                <a href="{{image.link}}">
+                    <div class="inner-banner">
+                        <!--<img ng-src="{{image.url}}" class="images-small img-circle img-responsive" />-->
+                        <h1 class="text-white text-left">{{image.title}}</h1>
+                        <p class="text-white text-uppercase text-bottom text-left">{{image.description}}</p>
+                    </div>
+                </a>
+</div>
+        </div>
+    </div>
+</div>

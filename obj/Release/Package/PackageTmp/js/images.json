@@ -1,0 +1,7 @@
+﻿[
+   {"url": "images/surfer.jpg","link": "#/surfer", "title": "Surfa i Varberg", "description":  "Apelviken och Läjet har den absolut bästa vindsurfingen i Sverige." },
+   {"url": "images/paraglider.jpg","link": "#/paragliding", "title":  "Skärmflyg är frihet", "description": "Flyg bland fåglarna och känn den absoluta friheten högt upp i luften."},
+   {"url": "images/formel1.jpg","link": "#/formel", "title":  "Formel 1 i Anderstorp", "description": "0-200 på 5 sekunder och en toppfart på 330 km/h är hisnande."},
+   {"url": "images/massage.jpg", "link": "#/massage", "title":  "Massage och SPA-behandlingar", "description": "Välj bland helande eller avslappnande behandlingar i harmonisk miljö."}
+]
+
